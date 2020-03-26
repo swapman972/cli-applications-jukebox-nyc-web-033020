@@ -19,6 +19,7 @@ def play(songs)
       return puts "#{user_song}"
     end}
   if user_song.to_i > 0 && user_song.to_i < 10
+    binding.pry
     return puts "#{songs[user_song.to_i-1]}"
   else
     puts "Invalid input, please try again"
