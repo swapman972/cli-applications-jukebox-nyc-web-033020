@@ -48,7 +48,9 @@ end
 
 def run(songs)
   puts "Please enter a command:"
-  while gets.strip != "exit" do
+  com = ""
+  while com != "exit" do
+    com = gets.strip
     if com == "list"
       list
     elsif com == "play"
