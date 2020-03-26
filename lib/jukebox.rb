@@ -13,12 +13,10 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   user_song = gets.strip
-  songs.each {|n| 
-    if user_song == n
+  if songs.include?(user_song)
    #   binding.pry
       puts "#{user_song}"
-    end}
-  if user_song.to_i > 0 && user_song.to_i < 10
+  elsif user_song.to_i > 0 && user_song.to_i < 10
   #  binding.pry
     puts "#{songs[user_song.to_i-1]}"
   else
