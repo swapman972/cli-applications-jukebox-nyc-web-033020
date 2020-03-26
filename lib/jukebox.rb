@@ -1,5 +1,7 @@
 # Add your code here
 
+require "pry"
+
 def help
   puts "I accept the following commands: \n"
   puts "- help : displays this help message"
