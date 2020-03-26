@@ -22,7 +22,6 @@ def play(songs)
   #  binding.pry
     puts "#{songs[user_song.to_i-1]}"
   else
-    binding.pry
     puts "Invalid input, please try again"
   end
 end
