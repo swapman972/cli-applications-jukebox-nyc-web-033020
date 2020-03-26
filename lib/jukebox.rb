@@ -15,7 +15,7 @@ def play(songs)
   user_song = gets.strip
   if songs.include?(user_song)
    #   binding.pry
-      puts "#{user_song}"
+      puts "#{songs.find"
   elsif user_song.to_i > 0 && user_song.to_i < 10
   #  binding.pry
     puts "#{songs[user_song.to_i-1]}"
