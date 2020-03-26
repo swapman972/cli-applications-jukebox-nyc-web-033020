@@ -27,7 +27,7 @@ end
 def list(songs)
   counter = 0
   while counter < songs.length do
-    binding.pry
+  #  binding.pry
     puts "#{counter + 1}. " + songs[counter] 
     counter += 1
   end
