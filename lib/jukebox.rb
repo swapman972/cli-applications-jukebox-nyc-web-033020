@@ -27,6 +27,7 @@ end
 def list(songs)
   counter = 0
   while counter < songs.length do
+    binding.pry
     puts "#{counter + 1}. " + songs[counter] 
     counter += 1
   end
@@ -50,7 +51,7 @@ def run(songs)
       play(songs)
       com = gets.strip
     elsif com == "help"
-    binding.pry
+   # binding.pry
       help
       com = gets.strip
     end
