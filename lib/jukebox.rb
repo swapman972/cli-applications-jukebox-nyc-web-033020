@@ -46,7 +46,7 @@ def run(songs)
       list(songs)
       com = gets.strip
     elsif com == "play"
-    binding.pry
+   # binding.pry
       play(songs)
       com = gets.strip
     elsif com == "help"
