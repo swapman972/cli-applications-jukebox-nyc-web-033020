@@ -57,7 +57,7 @@ def run(songs)
     elsif com == "help"
       help
     end
-    gets.strip
+    com = gets.strip
   end
   exit_jukebox
 end
