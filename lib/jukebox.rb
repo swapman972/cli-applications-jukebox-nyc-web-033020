@@ -25,7 +25,7 @@ def play(songs)
   user_song = gets.strip
   songs.each {|n| 
     if user_song == n
-      return puts "#{user_song}"
+      puts "#{user_song}"
     end}
   if user_song.to_i > 0 && user_song.to_i < 10
     puts "#{songs[user_song.to_i-1]}"
