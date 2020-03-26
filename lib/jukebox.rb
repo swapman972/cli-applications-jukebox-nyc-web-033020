@@ -50,6 +50,7 @@ def run(songs)
       play(songs)
       com = gets.strip
     elsif com == "help"
+    binding.pry
       help
       com = gets.strip
     end
