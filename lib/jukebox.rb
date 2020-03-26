@@ -51,6 +51,7 @@ def run(songs)
   com = ""
   while com != "exit" do
     com = gets.strip
+    
     if com == "list"
       list(songs)
     elsif com == "play"
