@@ -14,10 +14,8 @@ def play(songs)
   puts "Please enter a song name or number:"
   user_song = gets.strip
   if songs.include?(user_song)
-   #   binding.pry
       puts "Playing #{songs.find {|song| song == user_song}}"
   elsif user_song.to_i > 0 && user_song.to_i < 10
-  #  binding.pry
     puts "Playing #{songs[user_song.to_i-1]}"
   else
     puts "Invalid input, please try again"
@@ -27,7 +25,6 @@ end
 def list(songs)
   counter = 0
   while counter < songs.length do
-  #  binding.pry
     puts "#{counter + 1}. " + songs[counter] 
     counter += 1
   end
@@ -40,18 +37,14 @@ end
 def run(songs)
   puts "Please enter a command:"
   com = gets.strip
-  # binding.pry
   while com != "exit" do
     if com == "list"
-   #   binding.pry
       list(songs)
       com = gets.strip
     elsif com == "play"
-   # binding.pry
       play(songs)
       com = gets.strip
     elsif com == "help"
-   # binding.pry
       help
       com = gets.strip
     end
