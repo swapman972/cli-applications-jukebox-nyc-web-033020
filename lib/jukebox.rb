@@ -39,7 +39,7 @@ end
 def run(songs)
   puts "Please enter a command:"
   com = gets.strip
-  binding.pry
+  # binding.pry
   while com != "exit" do
     if com == "list"
       list(songs)
