@@ -42,6 +42,7 @@ def run(songs)
   # binding.pry
   while com != "exit" do
     if com == "list"
+      binding.pry
       list(songs)
       com = gets.strip
     elsif com == "play"
