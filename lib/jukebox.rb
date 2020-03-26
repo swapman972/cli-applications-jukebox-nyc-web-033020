@@ -50,7 +50,6 @@ def run(songs)
   puts "Please enter a command:"
   com = gets.strip
   while com != "exit" do
-    
     if com == "list"
       list(songs)
       com = gets.strip
